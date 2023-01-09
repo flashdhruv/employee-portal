@@ -26,9 +26,11 @@ function App() {
     setEmployees([newEmployee, ...employees]);
   }
 
+  
+
   return (
     <div className="App">
-      <NewEmployee onAddUser={addUser}/>
+      <NewEmployee onAddUser={addUser}/> 
       <EmployeeList items={employees} onRemoveUser={removeUser}/>
     </div>
   );

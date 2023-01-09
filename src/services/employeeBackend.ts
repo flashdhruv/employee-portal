@@ -12,6 +12,11 @@ class EmployeeService {
         return response.data;
     }
 
+    async getUser(id: number){
+        const response = await this.http.get<Employee>('/users/' + id);
+        return response.data;
+    }
+
     async addUser(name: string, username: string, email: string){
         const response = await this.http.post<Employee>('/users', { name, username, email});
         return response.data;
