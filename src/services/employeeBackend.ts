@@ -1,11 +1,16 @@
 import axios from "axios";
 import Employee from "../models/Employee";
+import Posts from "../models/Posts";
 
 class EmployeeService {
     http = axios.create({
         baseURL: "https://jsonplaceholder.typicode.com/"
     });
 
+    async getPosts(userId: number){
+        const response = await this.http.get<Posts[]>('/users/' + userId + '/posts');
+        return response.data;
+    }
 
     async getUsers(){
         const response = await this.http.get<Employee[]>('/users');
