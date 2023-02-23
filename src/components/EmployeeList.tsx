@@ -24,9 +24,9 @@ function EmployeeList({ items, onRemoveUser} : EmployeeListProps) {
         <div className='list-of-employees'>
         <ul className='list-group'>
             <h1>Number of Employees in the List: {items.length}</h1>
-            {items.map(employee => <li key={employee.id} className='list-group-item'> {employee.name} | {employee.username} | {employee.email}
-            <button onClick={() => onRemoveUser(employee.id)} className=' btn-danger mx-3'>Delete</button>
-            <button onClick={() => navigate('/viewEmployee/' + employee.id)} className=' btn-primary mx-3'>View Employee</button>
+            {items.map(employee => <li key={employee.id} className='list-group-item left-float'>Name: {employee.name} <br/> Username: {employee.username} <br/>Email:  {employee.email}
+            <button onClick={() => onRemoveUser(employee.id)} className='mx-3 right-float delete'>Delete</button>
+            <button onClick={() => navigate('/viewEmployee/' + employee.id)} className='mx-3 right-float view'>View Employee</button>
             
             </li>)}
         </ul>

@@ -54,7 +54,7 @@ const ViewEmployee: FunctionComponent<ViewEmployeeProps> = () => {
 
                 <h2 className="heading">Posts</h2>
                 <div className="posts scrollable">
-                    {Userposts.map(post => <li key={post.title}> <h3>{post.title}</h3> {post.body}</li>)}
+                    {Userposts.map(post => <li key={post.title} className="post"> <h3>{post.title}</h3> {post.body}</li>)}
                 </div>
 
                 

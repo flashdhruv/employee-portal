@@ -49,14 +49,16 @@ body {
 .scrollable {
     overflow: auto;
     max-height: 40vh;
-    border-radius: 1px;
-    box-shadow: black;
 }
 
 .scrollable::-webkit-scrollbar {
     display: none;
 }
 
+.post {
+    border-bottom: 2px solid black;
+    padding-top: 5%;
+}
 .heading {
     text-align: center;
     padding-top: 10%;

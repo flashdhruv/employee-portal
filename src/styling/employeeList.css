@@ -5,3 +5,30 @@
 .list-of-employees h1 {
     padding-bottom: 1rem;
 }
+.right-float {
+    float: right;
+    width: 10vw;
+}
+
+.left-float {
+    float: left;
+    font-weight: 500;
+}
+
+.delete,
+.view {
+    border: 0;
+    color: black;
+    background-color: white;
+    font-weight: 500;
+}
+
+.delete:hover {
+    box-shadow: 5px 5px red;
+    transition: .3s;
+}
+
+.view:hover {
+    box-shadow: 5px 5px blue;
+    transition: .3s;
+}
