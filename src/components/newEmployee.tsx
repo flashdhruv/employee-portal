@@ -31,7 +31,7 @@ function NewEmployee({onAddUser} : newEmployeeProps) {
             <label htmlFor="email" className='mx-2'>Email</label>
             <input value={email} onChange = {e => setEmail(e.target.value)} type="text" className="fom-control mx-2" />
 
-            <button type='submit' className="btn btn-primary rounded-pill mx-2">Add  Employee</button>
+            <button type='submit' className="btn-primary rounded-pill mx-2">Add  Employee</button>
         </form>
     );
 }

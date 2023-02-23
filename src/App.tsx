@@ -4,6 +4,7 @@ import Employee from './models/Employee';
 import employeeBackend from './services/employeeBackend';
 import NewEmployee from './components/newEmployee';
 
+
 function App() {
 
   const [employees, setEmployees] = useState<Employee[]> ([]);
@@ -30,8 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <NewEmployee onAddUser={addUser}/> 
-      <EmployeeList items={employees} onRemoveUser={removeUser}/>
+      <EmployeeList items={employees} onRemoveUser={removeUser}/> 
     </div>
   );
 }
