@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+Here's the link to access it
+https://flashdhruv.github.io/employee-portal/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
